@@ -22,7 +22,7 @@ function mostrar(productos){
         tr.innerHTML+= `
         
             <td>${producto.title}</td>
-            <td>${producto.permalink}</td>
+            <td><a href="${producto.permalink}">Link del Producto</a></td>
             <td><img src="${producto.thumbnail}"></td>
             <td>${producto.price}</td>
             
