@@ -37,5 +37,5 @@ function mostrar(productos){
 }
 
 function guardar(producto){
-
+    let url = "";
 }
