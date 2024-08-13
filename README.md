@@ -3,7 +3,6 @@
 
 Página web dónde de manera prolija y ordenada se muestran todos los productos extraídos de una API de MercadoLibre y si el usuario lo desea, se puede guardar el o los productos seleccionados.
 
-
 ## Tecnologías Utilizadas
 
 <ul>
@@ -14,4 +13,12 @@ Página web dónde de manera prolija y ordenada se muestran todos los productos 
   <li>MySql</li>
 </ul>
 
+## Pre-Requisitos
 
+<ol>
+  <li>Tener Descargada la Base de datos</li>
+</ol>
+
+## Imagen de ejemplo del Sistema
+
+<img src="https://th.bing.com/th/id/OIP.cBkjXEoSJNCpmr8QW5BnMAHaD_?rs=1&pid=ImgDetMain">
