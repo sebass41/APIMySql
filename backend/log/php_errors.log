@@ -1,0 +1,7 @@
+[14-Aug-2024 01:17:37 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'MLU626456635' for key 'PRIMARY' in C:\xampp\htdocs\APIMySql\backend\model\ProductoDAO.php:17
+Stack trace:
+#0 C:\xampp\htdocs\APIMySql\backend\model\ProductoDAO.php(17): mysqli->query('INSERT INTO pro...')
+#1 C:\xampp\htdocs\APIMySql\backend\controller\Producto.php(20): Producto->insertar('MLU626456635', 'Silla De Escrit...', 'https://www.mer...', 'http://http2.ml...', '374.3')
+#2 C:\xampp\htdocs\APIMySql\backend\controller\Producto.php(9): guardar()
+#3 {main}
+  thrown in C:\xampp\htdocs\APIMySql\backend\model\ProductoDAO.php on line 17
