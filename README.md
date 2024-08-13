@@ -19,6 +19,10 @@ Página web dónde de manera prolija y ordenada se muestran todos los productos 
   <li>Tener Descargada la Base de datos</li>
 </ol>
 
-## Imagen de ejemplo del Sistema
+## Demo del sistema
 
 <img src="https://th.bing.com/th/id/OIP.cBkjXEoSJNCpmr8QW5BnMAHaD_?rs=1&pid=ImgDetMain">
+
+## Autor
+
+- [@sebass41](https://www.github.com/sebass41)
