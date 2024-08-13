@@ -1,6 +1,6 @@
 window.onload = async ()=>{
     let productos = await obtener();
-    mostrar(productos);
+    await mostrar(productos);
     console.log(productos);
 }
 
@@ -22,13 +22,13 @@ function mostrar(productos){
         tr.innerHTML+= `
         
             <td>${producto.title}</td>
-            <td><a href="${producto.permalink}">Link del Producto</a></td>
+            <td><a href="${producto.permalink}" target="_blank">Link del Producto</a></td>
             <td><img src="${producto.thumbnail}"></td>
             <td>${producto.price}</td>
             
         `;
         let btn = document.createElement("button")
-        btn.onclick = guardar(productos);
+        btn.onclick = ()=>{guardar(producto)};
         let td = document.createElement("td");
         td.appendChild(btn);
         tr.appendChild(td);
@@ -36,6 +36,23 @@ function mostrar(productos){
     });
 }
 
-function guardar(producto){
-    let url = "";
+async function guardar(producto){
+    console.log(producto);
+    let url = "http://localhost/APIMySql/backend/controller/Producto.php?fun=guardar";
+    let formData = new FormData();
+    
+    formData.append("id", producto.id);
+    formData.append("title", producto.title);
+    formData.append("link", producto.permalink);
+    formData.append("img", producto.thumbnail);
+    formData.append("price", producto.price);
+
+    let config = {
+        method: 'POST',
+        body: formData
+    }
+
+    let respuesta = await fetch(url, config);
+    let rec = await respuesta.json();
+    console.log(rec);
 }

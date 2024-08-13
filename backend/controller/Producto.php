@@ -1,6 +1,8 @@
 <?php
 
-$funcion;
+require_once "../model/ProductoDAO.php";
+
+$funcion = $_GET['fun'];
 
 switch($funcion){
     case "guardar":
